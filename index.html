@@ -3,27 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legión Yulex</title>
+    <title>Legión Yulex - Foros</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <div class="header-content">
+            <div class="menu-btn">
+                <span>&#9776;</span>
+            </div>
             <div class="logo">
                 <img src="Recursos/logo.jpeg" alt="Legión Yulex">
                 <span>Legión Yulex</span>
             </div>
-            <div class="menu-btn">
-                <span>&#9776;</span>
+            <div class="login-btn">
+                <a href="login.html">Iniciar Sesión</a>
             </div>
         </div>
         <nav>
             <ul class="menu">
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="noticias.html">Noticias</a></li>
-                <li><a href="donation.html">Aportar</a></li>
-                <li><a href="login.html">Iniciar Sesión</a></li>
-                <li><a href="register.html">Registrarse</a></li>
+                <li><a href="foros.html">Foros</a></li>
+                <li><a href="dudas.html">Dudas</a></li>
             </ul>
         </nav>
     </header>
@@ -31,36 +32,39 @@
         <section class="hero">
             <img src="Recursos/Fondo1.jpeg" alt="Imagen principal">
             <div class="hero-text">
-                <h1>¿Quieres estar al tanto de las últimas noticias sobre videojuegos?</h1>
-                <a href="#" class="btn">Haz clic aquí</a>
+                <h1>Bienvenidos a Legión Yulex, el lugar donde las preguntas sobran, y las ideas se conectan</h1>
+                <input type="text" placeholder="Busca temas de interés...">
             </div>
         </section>
-        <section class="latest-news">
-            <div class="news-header">
-                <h2>Últimas Noticias:</h2>
+        <section class="popular-forums">
+            <div class="forums-header">
+                <h2>Foros más populares</h2>
             </div>
-            <div class="news-item">
-                <img src="Recursos/noticia1.png" alt="Noticia 1">
-                <div class="news-content">
-                    <h3>Título de Noticia 1</h3>
-                    <p>Descripción breve de la noticia. Texto de ejemplo...</p>
-                    <a href="#" class="btn-red">Ver más</a>
-                </div>
+            <div class="forums-content">
+                <!-- Espacio para foros populares -->
             </div>
-            <!-- Más noticias -->
+        </section>
+        <section class="placeholder">
+            <!-- Espacio en blanco -->
         </section>
     </main>
     <footer>
         <div class="footer-content">
             <div class="left">
-                <p>Todos los derechos reservados</p>
+                <div class="footer-logo">
+                    <img src="Recursos/logo.jpeg" alt="Legión Yulex">
+                    <span>Legión Yulex</span>
+                </div>
+                <p>Legion Yulex was created by users who had questions about various topics and there were no answers, so we wanted to make a place where everyone can share what they know.</p>
+                <p>Created by Yulex</p>
             </div>
             <div class="right">
-                <div class="social-links">
-                    <a href="#"><img src="Recursos/Facebook.png" alt="Facebook"></a>
-                    <a href="#"><img src="Recursos/X.png" alt="Twitter"></a>
-                    <a href="https://discord.com/invite/zW3bfw3VZF"><img src="Recursos/Discord.png" alt="Discord"></a>
-                </div>
+                <h3>MORE INFORMATION:</h3>
+                <ul>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Terms and rules</a></li>
+                    <li><a href="#">Suggest content</a></li>
+                </ul>
             </div>
         </div>
         <p class="footer-bottom">© Legión Yulex</p>
