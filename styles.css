@@ -1,0 +1,133 @@
+/* Paleta de colores */
+:root {
+    --color-primario: #ffeb3b; /* Amarillo */
+    --color-secundario: #673ab7; /* Morado */
+    --color-texto: #333;
+    --color-fondo: #fff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: var(--color-secundario);
+    color: var(--color-fondo);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.menu-btn span {
+    font-size: 2em;
+    cursor: pointer;
+    color: var(--color-fondo);
+}
+
+nav ul.menu {
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    background-color: var(--color-secundario);
+    padding: 0;
+}
+
+nav ul.menu.open {
+    display: flex;
+}
+
+nav ul.menu li {
+    margin: 0;
+}
+
+nav ul.menu li a {
+    display: block;
+    padding: 1em;
+    color: var(--color-fondo);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-primario);
+}
+
+nav ul.menu li a:hover {
+    background-color: var(--color-primario);
+    color: var(--color-texto);
+}
+
+.hero {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    filter: brightness(0.7);
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+    background-color: var(--color-primario);
+    color: var(--color-secundario);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: var(--color-secundario);
+    color: var(--color-primario);
+}
+
+.latest-news {
+    padding: 2em;
+}
+
+.latest-news h2 {
+    text-align: center;
+    color: var(--color-secundario);
+}
+
+.news-item {
+    display: flex;
+    margin: 1em 0;
+}
+
+.news-item img {
+    width: 150px;
+    height: 150px;
+    margin-right: 1em;
+}
+
+.news-content {
+    max-width: 600px;
+}
+
+footer {
+    background-color: var(--color-secundario);
+    color: var(--color-fondo);
+    padding: 1em;
+    text-align: center;
+}
+
+.social-links img {
+    height: 30px;
+    margin: 0 0.5em;
+}
