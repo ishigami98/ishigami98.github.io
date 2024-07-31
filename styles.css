@@ -43,13 +43,13 @@ header {
     align-items: center;
 }
 
-.logo img {
-    height: 50px;
+.logo img, .footer-logo img {
+    height: 40px; /* Ajusta este valor según el tamaño del título "Legión Yulex" */
     margin-right: 10px;
 }
 
-.logo span {
-    font-size: 1.5em;
+.logo span, .footer-logo span {
+    font-size: 1.5em; /* Asegura que el tamaño del texto coincida con el logo */
     font-weight: bold;
 }
 
@@ -70,6 +70,7 @@ nav ul.menu {
     left: 0;
     height: 100%;
     width: 300px;
+    z-index: 1000; /* Asegura que el menú esté encima del contenido */
     transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
 }
@@ -146,12 +147,13 @@ nav ul.menu li a:hover {
 }
 
 .forums-content {
-    /* Placeholder for forums content */
+    /* Placeholder para el contenido de foros */
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: center; /* Centra el contenido del pie de página */
+    text-align: center; /* Centra el texto */
     max-width: 1200px;
     margin: 0 auto;
     padding: 2em 1em;
@@ -160,7 +162,7 @@ nav ul.menu li a:hover {
 }
 
 .footer-content .column {
-    width: 48%;
+    width: 50%; /* Ajusta las columnas para que ocupen el espacio de manera equitativa */
 }
 
 .footer-content .column p,
@@ -208,7 +210,7 @@ nav ul.menu li a:hover {
 }
 
 .footer-bottom {
-    text-align: center;
+    text-align: center; /* Centra el texto de la parte inferior del pie de página */
     margin-top: 1em;
     font-size: 0.8em;
 }
