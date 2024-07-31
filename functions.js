@@ -6,12 +6,14 @@ document.addEventListener('DOMContentLoaded', function () {
         menu.classList.toggle('open');
     });
 
-    // Smooth scrolling to 'Popular Forums' (if necessary)
-    // const scrollToForumsBtn = document.querySelector('.some-button-class');
-    // scrollToForumsBtn.addEventListener('click', function (e) {
-    //     e.preventDefault();
-    //     document.querySelector('.popular-forums').scrollIntoView({
-    //         behavior: 'smooth'
-    //     });
-    // });
+    // Scroll to 'Most Popular Forums' section
+    const scrollToForumsBtn = document.querySelector('.hero-text input');
+    scrollToForumsBtn.addEventListener('keydown', function (e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            document.querySelector('.popular-forums').scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
+    });
 });
