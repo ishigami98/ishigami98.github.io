@@ -5,6 +5,7 @@
     --color-texto: #333;
     --color-fondo: #fff;
     --color-header-footer: #ff5722; /* Rojo */
+    --color-linea: #e0e0e0; /* Gris claro */
 }
 
 body {
@@ -129,16 +130,19 @@ nav ul.menu li a:hover {
 
 .news-header {
     background-color: var(--color-header-footer);
-    padding: 1em;
+    padding: 0.5em;
     margin-bottom: 1em;
-    text-align: center;
+    text-align: left;
     color: white;
+    font-weight: bold;
 }
 
 .news-item {
     display: flex;
     margin: 1em 0;
     align-items: center;
+    border-bottom: 1px solid var(--color-linea);
+    padding-bottom: 1em;
 }
 
 .news-item img {
