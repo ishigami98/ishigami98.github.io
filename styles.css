@@ -34,6 +34,10 @@ header {
     cursor: pointer;
 }
 
+.menu-btn span {
+    font-size: 1.1em;
+}
+
 .logo {
     display: flex;
     align-items: center;
@@ -148,7 +152,6 @@ nav ul.menu li a:hover {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     max-width: 1200px;
     margin: 0 auto;
     padding: 2em 1em;
@@ -156,11 +159,20 @@ nav ul.menu li a:hover {
     color: var(--color-texto);
 }
 
-.footer-content .left {
+.footer-content .column {
+    width: 48%;
+}
+
+.footer-content .column p,
+.footer-content .column ul {
+    margin: 0;
+}
+
+.footer-content .column.left {
     text-align: left;
 }
 
-.footer-content .right {
+.footer-content .column.right {
     text-align: right;
 }
 
@@ -175,10 +187,6 @@ nav ul.menu li a:hover {
 
 .footer-content h3 {
     margin: 0 0 0.5em 0;
-}
-
-.footer-content p, .footer-content ul {
-    margin: 0;
 }
 
 .footer-content ul {
@@ -228,7 +236,12 @@ nav ul.menu li a:hover {
         text-align: center;
     }
 
-    .footer-content .right {
+    .footer-content .column {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-content .column.right {
         margin-top: 1em;
     }
 }
