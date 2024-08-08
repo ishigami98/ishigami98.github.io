@@ -1,3 +1,7 @@
+// Manejar la apertura y cierre del menú
+document.getElementById('menu-button').addEventListener('click', function() {
+    document.getElementById('menu-panel').classList.toggle('hidden');
+});
 // Espera a que el DOM esté completamente cargado antes de ejecutar el código
 document.addEventListener('DOMContentLoaded', () => {
     // Obtiene el botón del menú y el panel del menú por su ID
