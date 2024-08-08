@@ -1,233 +1,141 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #000000;
-    color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.dark-mode {
-    background-color: #000000;
-    color: #ffffff;
-}
-
-.nav-bar {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #00274D;
-    padding: 1rem;
+    background-color: #ffffff;
+    padding: 10px 20px;
 }
 
-.menu-button img {
-    width: 30px;
-    height: 30px;
-}
-
-.logo {
+.menu-bar {
     display: flex;
     align-items: center;
 }
 
-.logo img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+.menu-bar .logo {
+    width: 50px;
+    margin-right: 20px;
 }
 
-.logo span {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #ffffff;
-}
-
-.login a {
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1rem;
-}
-
-.menu-panel {
-    display: none;
-    position: absolute;
-    top: 60px;
-    left: 0;
-    background-color: #00274D;
-    width: 100%;
-    text-align: left;
-    padding: 1rem;
-}
-
-.menu-panel ul {
-    list-style-type: none;
+.menu-bar nav ul {
+    list-style: none;
+    margin: 0;
     padding: 0;
 }
 
-.menu-panel ul li {
-    margin: 10px 0;
+.menu-bar nav ul li {
+    display: inline;
+    margin-right: 15px;
 }
 
-.menu-panel ul li a {
-    color: #ffffff;
+.menu-bar nav ul li a {
     text-decoration: none;
-    font-size: 1.2rem;
+    color: #000;
 }
 
-.welcome-section {
-    text-align: center;
+.login a {
+    text-decoration: none;
+    color: #000;
+}
+
+.hero {
     position: relative;
+    text-align: center;
+    color: white;
 }
 
-.welcome-section img {
+.hero img {
     width: 100%;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
 }
 
-.welcome-text {
+.hero-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #ffffff;
 }
 
-.welcome-text h1 {
-    font-size: 2.5rem;
+.hero-text h1 {
+    font-size: 2.5em;
 }
 
-.welcome-text p {
-    font-size: 1.2rem;
-    margin: 10px 0;
+.hero-text p {
+    font-size: 1.2em;
 }
 
-#search-button {
-    padding: 10px 20px;
-    font-size: 1rem;
-    background-color: #1E90FF;
+.hero-text button {
+    background-color: #007bff;
+    color: white;
     border: none;
-    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1em;
     cursor: pointer;
-}
-
-#search-bar {
     margin-top: 10px;
 }
 
-#search-bar input {
-    width: 80%;
-    padding: 10px;
-    font-size: 1rem;
-}
-
-.hidden {
-    display: none;
-}
-
 .recent-questions {
-    padding: 2rem;
-    background-color: #00274D;
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
 }
 
 .recent-questions h2 {
-    font-size: 1.5rem;
-    color: #ffffff;
-    border-bottom: 2px solid #ffffff;
-    padding-bottom: 0.5rem;
+    margin-top: 0;
 }
 
 .question {
     display: flex;
     align-items: center;
-    margin-top: 1rem;
+    background-color: white;
+    color: black;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 
 .question img {
     width: 100px;
     height: 100px;
-    margin-right: 1rem;
+    margin-right: 15px;
 }
 
-.question-text h3 {
-    font-size: 1.2rem;
-    color: #ffffff;
+.footer-left, .footer-right {
+    padding: 20px;
 }
 
-.footer-content {
-    display: flex;
-    justify-content: space-between;
-    padding: 2rem;
-    background-color: #00274D;
-}
-
-.footer-content img {
+.footer-left .logo {
     width: 50px;
-    height: 50px;
 }
 
-.footer-content p {
-    margin: 0.5rem 0;
-    color: #ffffff;
+.footer-right h3 {
+    margin-top: 0;
 }
 
-.footer-content .left,
-.footer-content .right {
-    flex: 1;
-}
-
-.footer-content .right ul {
-    list-style-type: none;
+.footer-right ul {
+    list-style: none;
     padding: 0;
 }
 
-.footer-content .right ul li {
-    margin: 0.5rem 0;
+.footer-right ul li {
+    margin-bottom: 5px;
 }
 
-.footer-content .right ul li a {
-    color: #1E90FF;
+.footer-right ul li a {
     text-decoration: none;
+    color: #000;
 }
 
-.bottom-bar {
-    background-color: #001F3F;
-    text-align: center;
-    padding: 1rem;
-}
-
-@media (max-width: 768px) {
-    .nav-bar {
-        flex-direction: column;
-    }
-
-    .welcome-text h1 {
-        font-size: 1.5rem;
-    }
-
-    .welcome-text p {
-        font-size: 1rem;
-    }
-
-    .recent-questions {
-        padding: 1rem;
-    }
-
-    .question {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .question img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-content .left,
-    .footer-content .right {
-        flex: none;
-        text-align: center;
-    }
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #f8f9fa;
+    padding: 20px;
 }
