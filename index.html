@@ -3,72 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Legión Yulex - Foro</title>
+    <title>Legión Yulex</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="functions.js" defer></script>
 </head>
-<body>
+<body class="dark-mode">
     <header>
-        <div class="header-content">
-            <div class="menu-btn">
-                <span>&#9776; Menú</span>
+        <div class="nav-bar">
+            <div class="menu-button" id="menu-button">
+                <img src="Recursos/menu.png" alt="Menú">
             </div>
             <div class="logo">
-                <img src="Recursos/logo.jpg" alt="Legión Yulex">
+                <img src="Recursos/logo.png" alt="Legión Yulex">
                 <span>Legión Yulex</span>
             </div>
-            <div class="login-btn">
+            <div class="login">
                 <a href="login.html">Iniciar sesión</a>
             </div>
         </div>
-        <nav>
-            <ul class="menu">
+        <div class="menu-panel" id="menu-panel">
+            <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="foros.html">Foros</a></li>
-                <li><a href="dudas.html">Dudas</a></li>
+                <li><a href="forums.html">Foros</a></li>
+                <li><a href="doubt.html">Dudas</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
     <main>
-        <section class="hero">
-            <img src="Recursos/Fondo1.jpeg" alt="Imagen Principal">
-            <div class="hero-text">
-                <h1>Bienvenidos a Legión Yulex, el lugar donde las preguntas sobran y las ideas se conectan</h1>
-                <input type="text" placeholder="Buscar temas...">
+        <section class="welcome-section">
+            <img src="Recursos/Fondo1.jpeg" alt="Bienvenidos">
+            <div class="welcome-text">
+                <h1>Bienvenidos a Legión Yulex</h1>
+                <p>El lugar donde las preguntas sobran y las ideas se conectan</p>
+                <button id="search-button">BUSCAR AQUÍ</button>
+                <div id="search-bar" class="hidden">
+                    <input type="text" placeholder="Escribe tu búsqueda...">
+                </div>
             </div>
         </section>
-        <section class="popular-forums">
-            <div class="forums-header">
-                <h2>Foros más populares</h2>
+        <section class="recent-questions">
+            <h2>Preguntas recientes:</h2>
+            <div class="question">
+                <img src="Recursos/noticia1.png" alt="Pregunta">
+                <div class="question-text">
+                    <h3>¿De qué color son los osos polares?</h3>
+                    <p>El oso polar tiene pelaje blanco para que pueda camuflarse en su entorno. Su pelaje está tan bien adaptado para los ambientes árticos que a veces puede confundirse con un montón de nieve.</p>
+                    <p><strong>Por Yulex | Hace 5 horas</strong></p>
+                </div>
             </div>
-            <div class="forums-content">
-                <!-- Placeholder para foros populares -->
-            </div>
-        </section>
-        <section class="placeholder">
-            <!-- Espacio en blanco para contenido futuro -->
+            <!-- Añadir más preguntas aquí -->
         </section>
     </main>
     <footer>
         <div class="footer-content">
-            <div class="column left">
-                <div class="footer-logo">
-                    <img src="Recursos/logo.jpg" alt="Legión Yulex">
-                    <span>Legión Yulex</span>
-                </div>
-                <p>Legión Yulex fue creado por usuarios que tenían preguntas sobre varios temas y no había respuestas, así que quisimos crear un lugar donde todos puedan compartir lo que saben.</p>
-                <p>Creado por Yulex</p>
+            <div class="left">
+                <img src="Recursos/logo.png" alt="Legión Yulex">
+                <p>Legion Yulex fue creado por usuarios que tenían preguntas y no encontraban respuestas, por ello crearon un lugar donde todos puedan compartir lo que saben.</p>
+                <p>Created by Yulex</p>
             </div>
-            <div class="column right">
-                <h3>MÁS INFORMACIÓN:</h3>
+            <div class="right">
+                <h3>Más Información:</h3>
                 <ul>
                     <li><a href="#">Contáctanos</a></li>
-                    <li><a href="#">Términos y reglas</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
                     <li><a href="#">Sugerir contenido</a></li>
+                    <li><a href="#">Reportar</a></li>
                 </ul>
             </div>
         </div>
-        <p class="footer-bottom">© Legión Yulex</p>
+        <div class="bottom-bar">
+            <p>© Legión Yulex</p>
+        </div>
     </footer>
-    <script src="functions.js"></script>
 </body>
 </html>
