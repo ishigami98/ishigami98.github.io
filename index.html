@@ -5,75 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legión Yulex</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="functions.js" defer></script>
 </head>
-<body class="dark-mode">
+<body>
     <header>
-        <div class="nav-bar">
-            <div class="menu-button" id="menu-button">
-                <img src="Recursos/menu.png" alt="Menú">
-            </div>
-            <div class="logo">
-                <img src="Recursos/logo.png" alt="Legión Yulex">
-                <span>Legión Yulex</span>
-            </div>
-            <div class="login">
-                <a href="login.html">Iniciar sesión</a>
-            </div>
+        <div class="menu-bar">
+            <img src="Recursos/logo.png" alt="Legión Yulex Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#">Menú</a></li>
+                </ul>
+            </nav>
         </div>
-        <div class="menu-panel" id="menu-panel">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="forums.html">Foros</a></li>
-                <li><a href="doubt.html">Dudas</a></li>
-            </ul>
+        <div class="login">
+            <a href="#">Iniciar sesión</a>
         </div>
     </header>
     <main>
-        <section class="welcome-section">
-            <img src="Recursos/Fondo1.jpeg" alt="Bienvenidos">
-            <div class="welcome-text">
+        <section class="hero">
+            <img src="Recursos/Fondo1.jpeg" alt="Fondo">
+            <div class="hero-text">
                 <h1>Bienvenidos a Legión Yulex</h1>
                 <p>El lugar donde las preguntas sobran y las ideas se conectan</p>
-                <button id="search-button">BUSCAR AQUÍ</button>
-                <div id="search-bar" class="hidden">
-                    <input type="text" placeholder="Escribe tu búsqueda...">
-                </div>
+                <button>Buscar aquí</button>
             </div>
         </section>
         <section class="recent-questions">
             <h2>Preguntas recientes:</h2>
             <div class="question">
-                <img src="Recursos/noticia1.png" alt="Pregunta">
+                <img src="Recursos/noticia1.png" alt="Noticia 1">
                 <div class="question-text">
                     <h3>¿De qué color son los osos polares?</h3>
                     <p>El oso polar tiene pelaje blanco para que pueda camuflarse en su entorno. Su pelaje está tan bien adaptado para los ambientes árticos que a veces puede confundirse con un montón de nieve.</p>
-                    <p><strong>Por Yulex | Hace 5 horas</strong></p>
+                    <p>Por Yulex | Hace 5 horas</p>
                 </div>
             </div>
-            <!-- Añadir más preguntas aquí -->
         </section>
     </main>
     <footer>
-        <div class="footer-content">
-            <div class="left">
-                <img src="Recursos/logo.png" alt="Legión Yulex">
-                <p>Legion Yulex fue creado por usuarios que tenían preguntas y no encontraban respuestas, por ello crearon un lugar donde todos puedan compartir lo que saben.</p>
-                <p>Created by Yulex</p>
-            </div>
-            <div class="right">
-                <h3>MÁS INFORMACIÓN:</h3>
-                <ul>
-                    <li><a href="#">Contáctanos</a></li>
-                    <li><a href="#">Términos y condiciones</a></li>
-                    <li><a href="#">Sugerir contenido</a></li>
-                    <li><a href="#">Reportar</a></li>
-                </ul>
-            </div>
+        <div class="footer-left">
+            <img src="Recursos/logo.png" alt="Legión Yulex Logo" class="logo">
+            <p>Legion Yulex fue creado por usuarios que tenían preguntas y no encontraban respuestas, por ello crearon un lugar donde todos puedan compartir lo que saben.</p>
+            <p>Created by Yulex</p>
         </div>
-        <div class="bottom-bar">
-            <p>© Legión Yulex</p>
+        <div class="footer-right">
+            <h3>Más información</h3>
+            <ul>
+                <li><a href="#">Contáctanos</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+                <li><a href="#">Sugerir contenido</a></li>
+                <li><a href="#">Reportar</a></li>
+            </ul>
         </div>
     </footer>
+    <script src="functions.js"></script>
 </body>
 </html>
