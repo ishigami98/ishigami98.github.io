@@ -4,43 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Legión Yulex</title>
+    <!-- Enlace al archivo CSS -->
     <link rel="stylesheet" href="styles.css">
+    <!-- Enlace al archivo JavaScript -->
     <script src="functions.js" defer></script>
 </head>
 <body class="dark-mode">
+    <!-- Encabezado -->
     <header>
+        <!-- Barra de navegación -->
         <div class="nav-bar">
+            <!-- Botón del menú -->
             <div class="menu-button" id="menu-button">
                 <img src="Recursos/menu.png" alt="Menú">
             </div>
+            <!-- Logo -->
             <div class="logo">
                 <img src="Recursos/logo.png" alt="Legión Yulex">
                 <span>Legión Yulex</span>
             </div>
+            <!-- Enlace para iniciar sesión -->
             <div class="login">
                 <a href="login.html">Iniciar sesión</a>
             </div>
         </div>
-        <div class="menu-panel" id="menu-panel">
+        <!-- Panel del menú -->
+        <div class="menu-panel hidden" id="menu-panel">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li><a href="forums.html">Foros</a></li>
-                <li><a href="doubt.html">Dudas</a></li>
+                <li><a href="questions.html">Preguntas</a></li>
+                <li><a href="help.html">Ayuda</a></li>
             </ul>
         </div>
     </header>
+    <!-- Contenido principal -->
     <main>
+        <!-- Sección de bienvenida -->
         <section class="welcome-section">
             <img src="Recursos/Fondo1.jpeg" alt="Bienvenidos">
             <div class="welcome-text">
                 <h1>Bienvenidos a Legión Yulex</h1>
                 <p>El lugar donde las preguntas sobran y las ideas se conectan</p>
+                <!-- Botón de búsqueda -->
                 <button id="search-button">BUSCAR AQUÍ</button>
+                <!-- Barra de búsqueda -->
                 <div id="search-bar" class="hidden">
                     <input type="text" placeholder="Escribe tu búsqueda...">
                 </div>
             </div>
         </section>
+        <!-- Sección de preguntas recientes -->
         <section class="recent-questions">
             <h2>Preguntas recientes:</h2>
             <div class="question">
@@ -54,6 +67,7 @@
             <!-- Añadir más preguntas aquí -->
         </section>
     </main>
+    <!-- Pie de página -->
     <footer>
         <div class="footer-content">
             <div class="left">
@@ -62,7 +76,7 @@
                 <p>Created by Yulex</p>
             </div>
             <div class="right">
-                <h3>MÁS INFORMACIÓN:</h3>
+                <h3>Más Información:</h3>
                 <ul>
                     <li><a href="#">Contáctanos</a></li>
                     <li><a href="#">Términos y condiciones</a></li>
