@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consultas - Legión Yulex</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dark-mode">
+    <header>
+        <div class="nav-bar">
+            <div class="menu-button" id="menu-button">
+                <!-- Icono de menú hecho con CSS -->
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="logo">
+                <img src="Recursos/logo.png" alt="Legión Yulex">
+                <span>Legión Yulex</span>
+            </div>
+            <div class="login">
+                <a href="login.html">Iniciar sesión</a>
+            </div>
+        </div>
+        <div class="menu-panel hidden" id="menu-panel">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="forums.html">Foros</a></li>
+                <li><a href="consultas.html">Consultas</a></li>
+            </ul>
+        </div>
+    </header>
+    <main class="content-padding">
+        <section class="consulta-section">
+            <h1>Envía tu pregunta</h1>
+            <form class="consulta-form">
+                <label for="subject">Asunto:</label>
+                <input type="text" id="subject" name="subject" placeholder="Escribe el asunto de tu consulta">
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" placeholder="Escribe tu pregunta o duda aquí"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="left">
+                <img src="Recursos/logo.png" alt="Legión Yulex">
+                <p>Legión Yulex fue creado por usuarios que tenían preguntas y no encontraban respuestas, por ello crearon un lugar donde todos puedan compartir lo que saben.</p>
+                <p>Created by Yulex</p>
+            </div>
+            <div class="right">
+                <h3>Más Información:</h3>
+                <ul>
+                    <li><a href="#">Contáctanos</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Sugerir contenido</a></li>
+                    <li><a href="#">Reportar</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="bottom-bar">
+            <p>© Legión Yulex</p>
+        </div>
+    </footer>
+    <script src="functions.js"></script>
+</body>
+                                              </html>
