@@ -14,7 +14,6 @@ Legión Yulex es una plataforma de foros donde los usuarios pueden hacer pregunt
 
 - **Foros interactivos:** Comparte tus preguntas y respuestas.
 - **Tutoriales:** Publica y consulta tutoriales sobre diversos temas.
-- **Modo oscuro:** Alterna entre modos de visualización claro y oscuro.
 - **Autenticación:** Inicia sesión con Google y crea una cuenta.
 
 ---
