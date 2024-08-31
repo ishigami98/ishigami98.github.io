@@ -1,0 +1,122 @@
+/* Barra de navegación */
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00274D;
+    padding: 1rem;
+}
+
+/* Sección de bienvenida */
+.welcome-section {
+    text-align: center;
+    position: relative;
+}
+
+.welcome-section img {
+    width: 100%;
+    height: auto;
+}
+
+.welcome-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+}
+
+.welcome-text h1 {
+    font-size: 2.5rem;
+}
+
+.welcome-text p {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+/* Botón de búsqueda */
+#search-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #1E90FF;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+/* Barra de búsqueda */
+#search-bar {
+    margin-top: 10px;
+}
+
+#search-bar input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+/* Clase para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+/* Sección de preguntas recientes */
+.recent-questions {
+    padding: 2rem;
+    background-color: #00274D;
+}
+
+.recent-questions h2 {
+    font-size: 1.5rem;
+    color: #ffffff;
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 0.5rem;
+}
+
+.question {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.question img {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+}
+
+.question-text h3 {
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .welcome-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-text p {
+        font-size: 1rem;
+    }
+
+    .recent-questions {
+        padding: 1rem;
+    }
+
+    .question {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .question img {
+        width: 80px;
+        height: 80px;
+    }
+    
+}
